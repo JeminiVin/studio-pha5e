@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .welcome-container {
+            text-align: center;
+        }
+        .animated-text {
+            font-size: 3rem;
+            display: inline-block;
+            animation: fadeInOut 10s linear infinite;
+        }
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            10%, 90% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <script>
+        // Redirect to the home page after 10 seconds
+        setTimeout(function() {
+            window.location.href = './index.html'; // Replace 'home.html' with your home page URL
+        }, 10000);
+    </script>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1 class="animated-text">PHA5E</h1>
+        <p>loading...</p>
+    </div>
+</body>
+</html>
